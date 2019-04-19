@@ -1,0 +1,218 @@
+/***********************************************************************************
+ *	+ [Master Stylesheet]
+
+ *	+ Reximost - Personal Portfolio HTML Template
+ *	+ Autor: DooevDima
+ *	+ Version: 1.0
+ *	+ Last change: 10.04.2029
+ ***********************************************************************************/
+/***********************************************************************************
+ *	+ [Table of contents]
+ *	+
+ *	+ 1. Fonts
+ *	+ 2. Body / общие стили
+ *	+ 	3. Header / .header
+ *	+ 		3.1. Navigation / nav
+ *	+ 	3. About / .about
+ *	+ 	4. Features / .features
+ *	+ 	5. Products / .products
+ *	+ 	6. Why-Olimpik / .why-Olimpik
+ *	+ 	7. import / media 
+ ***********************************************************************************/
+/***********************************************************************************
+ *	+ COLOR SCHEME:
+	 *	+ Accent color: #A3B849
+	 *	+ Hover accent: #76943C
+ ***********************************************************************************/
+
+@import "fonts"
+@import "vars"
+
+/* Body / общие стили  START */
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+body  
+  font-family: "Merr", sans-serif
+a
+  transition: color 0.5s ease
+a:hover
+  color: $accent
+.container
+  max-width: 1640px
+  padding: 0
+.title
+  font-family: "Alice", sans-serif
+  font-size: 40px
+  margin-bottom: 30px
+.btn-accent
+  font-size: 20px
+  background: $accent
+  padding: 10px 40px
+  border-radius: 5px
+  color: #fff
+  transition: background-color .5s ease
+  &:hover
+    background: $hover
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover
+  color: $accent
+/* Body / общие стили  END */
+
+/* header START */
+.header
+  position: relative
+  background-image: url(../img/1-header/main-page-pic.jpg)
+  background-size: cover
+  background-repeat: no-repeat
+  &::before
+    content: ''
+    display: block
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(0, 0, 0, .6)
+  .container
+    border-bottom: 1px solid #999
+    padding: 0
+  &_title
+    font-size: 75px
+  &_subtitle
+    margin: 0 auto
+    margin-top: 70px
+    margin-bottom: 70px    
+    max-width: 1000px
+    font-size: 24px
+  &_contacts
+    justify-content: space-between
+    color: #fff
+    margin-top: 100px
+    margin-bottom: 50px
+    img
+      width: 20px
+/* nav START */
+nav.navbar
+  padding-top: 0px
+  padding-bottom: 10px
+    
+nav
+  margin-bottom: 200px
+  .navbar-brand
+    width: 100px
+  a  
+    font-size: 20px
+    color: #ffffff
+  .nav_tel
+    padding: 10px 30px
+    border: 3px solid $accent
+    border-radius: 5px
+    margin-left: 10px
+    a
+      color: $accent
+      font-family: "Merr-bold", sans-serif
+      font-size: 20px
+.navbar-expand-lg .navbar-nav .nav-link
+  padding-right: 1rem
+  padding-left: 1rem
+.navbar-dark .navbar-nav .nav-link
+  color: #fff
+/* nav END */
+    
+/* header END */
+
+/* about START */
+.about
+  padding-top: 150px
+  padding-bottom: 230px
+  background: rgb(255,255,255)
+  background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(252,252,231,1) 150%)
+  img
+    width: 565px
+  &_subtitle
+    font-size: 16px
+    line-height: 1.4
+    letter-spacing: 1px
+    margin-bottom: 40px
+    &+img
+      width: 480px
+      margin-left: -15px
+/* about END */
+/* products START */
+.products
+  position: relative
+  display: flex
+  flex-direction: column
+  z-index: 1
+  &_bg
+    img
+      position: absolute
+      z-index: -1
+      &:nth-child(1)
+        left: 153px
+        top: -66px
+      &:nth-child(2)
+        top: 343px
+        left: -66px
+      &:nth-child(3)
+        right: 20px
+        top: 0px
+  .title
+    margin: 0 auto
+    margin-bottom: 90px
+  .row
+    img
+      margin-bottom: 20px
+      width: 100%
+      max-height: 200px
+    .gradient
+      height: 50px
+      width: 100%
+  .row div
+    position: relative
+    span
+      position: absolute
+      width: 100%
+      height: 100px
+      display: inline-block
+      left: 50%
+      bottom: -30px
+      transform: translate(-50%, -50%)
+      font-size: 18px
+      text-align: center
+      white-space: nowrap
+      line-height: 7
+      background: rgb(255,255,255)
+      background: linear-gradient(0deg, rgba(255,255,255,0.9023984593837535) 0%, rgba(255,255,255,0.7875525210084033) 43%, rgba(255,255,255,0) 100%);
+  .container
+    margin-bottom: 55px
+/* products END */
+/* why-Olimpik START */
+.why-Olimpik
+  margin-top: 200px
+  background-image: url(/img/4-why_Olimpik/bg.jpg)
+  .container
+    background-image: url(/img/4-why_Olimpik/plate.png)
+    background-repeat: no-repeat
+    background-position: center center
+    .row
+      display: flex
+      flex-direction: row
+      justify-content: center
+      div
+        display: flex
+        flex-direction: column
+        max-width: 330px
+  .title
+    font-size: 24px
+    font-family: "Merr-bold", sans-serif
+  
+/* why-Olimpik END */
+
+
+@import "media" // Всегда в конце

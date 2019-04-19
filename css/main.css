@@ -1,0 +1,432 @@
+@charset "UTF-8";
+
+/***********************************************************************************
+ *	+ [Master Stylesheet]
+
+ *	+ Reximost - Personal Portfolio HTML Template
+ *	+ Autor: DooevDima
+ *	+ Version: 1.0
+ *	+ Last change: 10.04.2029
+ ***********************************************************************************/
+/***********************************************************************************
+ *	+ [Table of contents]
+ *	+
+ *	+ 1. Fonts
+ *	+ 2. Body / общие стили
+ *	+ 	3. Header / .header
+ *	+ 		3.1. Navigation / nav
+ *	+ 	3. About / .about
+ *	+ 	4. Features / .features
+ *	+ 	5. Products / .products
+ *	+ 	6. Why-Olimpik / .why-Olimpik
+ *	+ 	7. import / media
+ ***********************************************************************************/
+/***********************************************************************************
+ *	+ COLOR SCHEME:
+	 *	+ Accent color: #A3B849
+	 *	+ Hover accent: #76943C
+ ***********************************************************************************/
+@font-face {
+  font-family: "Alice";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Alice/Alice-Regular.eot");
+  src: url("../fonts/Alice/Alice-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Alice/Alice-Regular.woff") format("woff"), url("../fonts/Alice/Alice-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Merr";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Merriweather/Merriweather-Regular.eot");
+  src: url("../fonts/Merriweather/Merriweather-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Merriweather/Merriweather-Regular.woff") format("woff"), url("../fonts/Merriweather/Merriweather-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Merr-bold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Merriweather/Merriweather-Bold.eot");
+  src: url("../fonts/Merriweather/Merriweather-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Merriweather/Merriweather-Bold.woff") format("woff"), url("../fonts/Merriweather/Merriweather-Bold.ttf") format("truetype");
+}
+
+/* Body / общие стили  START */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Merr", sans-serif;
+}
+
+a {
+  -webkit-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+}
+
+a:hover {
+  color: #A3B849;
+}
+
+.container {
+  max-width: 1640px;
+  padding: 0;
+}
+
+.title {
+  font-family: "Alice", sans-serif;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.btn-accent {
+  font-size: 20px;
+  background: #A3B849;
+  padding: 10px 40px;
+  border-radius: 5px;
+  color: #fff;
+  -webkit-transition: background-color .5s ease;
+  transition: background-color .5s ease;
+}
+
+.btn-accent:hover {
+  background: #76943C;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #A3B849;
+}
+
+/* Body / общие стили  END */
+/* header START */
+.header {
+  position: relative;
+  background-image: url(../img/1-header/main-page-pic.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.header .container {
+  border-bottom: 1px solid #999;
+  padding: 0;
+}
+
+.header_title {
+  font-size: 75px;
+}
+
+.header_subtitle {
+  margin: 0 auto;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  max-width: 1000px;
+  font-size: 24px;
+}
+
+.header_contacts {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  color: #fff;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.header_contacts img {
+  width: 20px;
+}
+
+/* nav START */
+nav.navbar {
+  padding-top: 0px;
+  padding-bottom: 10px;
+}
+
+nav {
+  margin-bottom: 200px;
+}
+
+nav .navbar-brand {
+  width: 100px;
+}
+
+nav a {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+nav .nav_tel {
+  padding: 10px 30px;
+  border: 3px solid #A3B849;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+nav .nav_tel a {
+  color: #A3B849;
+  font-family: "Merr-bold", sans-serif;
+  font-size: 20px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+}
+
+/* nav END */
+/* header END */
+/* about START */
+.about {
+  padding-top: 150px;
+  padding-bottom: 230px;
+  background: white;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0)), color-stop(150%, #fcfce7));
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, #fcfce7 150%);
+}
+
+.about img {
+  width: 565px;
+}
+
+.about_subtitle {
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+}
+
+.about_subtitle+img {
+  width: 480px;
+  margin-left: -15px;
+}
+
+/* about END */
+/* products START */
+.products {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.products_bg img {
+  position: absolute;
+  z-index: -1;
+}
+
+.products_bg img:nth-child(1) {
+  left: 153px;
+  top: -66px;
+}
+
+.products_bg img:nth-child(2) {
+  top: 343px;
+  left: -66px;
+}
+
+.products_bg img:nth-child(3) {
+  right: 20px;
+  top: 0px;
+}
+
+.products .title {
+  margin: 0 auto;
+  margin-bottom: 90px;
+}
+
+.products .row img {
+  margin-bottom: 20px;
+  width: 100%;
+  max-height: 200px;
+}
+
+.products .row .gradient {
+  height: 50px;
+  width: 100%;
+}
+
+.products .row div {
+  position: relative;
+}
+
+.products .row div span {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  display: inline-block;
+  left: 50%;
+  bottom: -30px;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 7;
+  background: white;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.902398)), color-stop(43%, rgba(255, 255, 255, 0.787553)), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.902398) 0%, rgba(255, 255, 255, 0.787553) 43%, rgba(255, 255, 255, 0) 100%);
+}
+
+.products .container {
+  margin-bottom: 55px;
+}
+
+/* products END */
+/* why-Olimpik START */
+.why-Olimpik {
+  margin-top: 200px;
+  background-image: url(/img/4-why_Olimpik/bg.jpg);
+}
+
+.why-Olimpik .container {
+  background-image: url(/img/4-why_Olimpik/plate.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.why-Olimpik .container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.why-Olimpik .container .row div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: 330px;
+}
+
+.why-Olimpik .title {
+  font-size: 24px;
+  font-family: "Merr-bold", sans-serif;
+}
+
+/* why-Olimpik END */
+/*==========  Desktop First  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1650px) {
+  .products_bg img {
+    display: none;
+  }
+
+  .about .col-12 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  header,
+  section {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 1200px) {
+  .about_subtitle {
+    width: 80%;
+  }
+
+  .nav_tel {
+    display: none;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 767px) {
+  .about img {
+    width: 100%;
+    margin: 0;
+  }
+
+  .about_subtitle+img {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* */
+}
+
+@media only screen and (max-width: 575px) {
+  /* */
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  /**/
+}
+
+/*==========  Mobile First  ==========*/
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  /**/
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 576px) {
+  /* */
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  /**/
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  /**/
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  /**/
+}
