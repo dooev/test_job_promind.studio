@@ -16,7 +16,54 @@
   header, section
     padding-right: 10px
     padding-left: 10px
+@media only screen and (max-width : 1300px)
 
+  /* why-Olimpik START */
+  .why-Olimpik
+    padding-top: 80px
+    padding-bottom: 50px
+    .title_center
+      font-family: "Alice", sans-serif
+      font-size: 40px
+    &_center
+      background: transparent
+      max-width: 100%
+      height: 100%
+      margin: 0 auto
+      text-align: center
+      padding-top: 80px
+      position: relative
+    &_text
+      display: flex
+      position: initial
+      text-align: center
+      .first
+        margin: 0
+        padding: 5% 4%
+        width: 50%
+        & + div
+          margin: 0
+          padding: 5% 4%
+          width: 50%
+      div img
+        position: initial
+        width: 75px
+        display: block
+        margin: 0 auto
+        margin-bottom: 20px
+      &-top
+        width: 100%
+        div
+          width: 100%
+      &-left
+        width: 100%
+        flex-direction: row
+      &-right
+        flex-direction: row
+        width: 100%
+      &-bottom
+        width: 100%
+  /* why-Olimpik END */
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 1200px)
   .about
@@ -61,7 +108,20 @@
     .row div span
       font-weight: bold
       font-size: 16px
+  /* why-Olimpik START */
+  .why-Olimpik
+    .title
+      font-size: 35px
+      line-height: 1.2
+    &_center
 
+    &_text
+      .title, .subtitle
+        font-size: 15px
+      .first
+        padding: 10% 5px
+        & + div
+          padding: 10% 5px
   
   
 @media only screen and (max-width : 480px)

@@ -312,42 +312,10 @@ nav .nav_tel a {
   background-position: center center;
 }
 
-.why-Olimpik .container .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.why-Olimpik .container .row div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.why-Olimpik .container .row div span {
-  display: inline-block;
-  max-width: 290px;
-}
-
-.why-Olimpik .container .row div span + span {
-  color: #6F6F6F;
-}
-
 .why-Olimpik_center {
   background-image: url(/img/4-why_Olimpik/plate.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   max-width: 680px;
   height: 680px;
   margin: 0 auto;
@@ -506,6 +474,75 @@ nav .nav_tel a {
   }
 }
 
+@media only screen and (max-width: 1300px) {
+  /* why-Olimpik START */
+  .why-Olimpik {
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+  .why-Olimpik .title_center {
+    font-family: "Alice", sans-serif;
+    font-size: 40px;
+  }
+  .why-Olimpik_center {
+    background: transparent;
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 80px;
+    position: relative;
+  }
+  .why-Olimpik_text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: initial;
+    text-align: center;
+  }
+  .why-Olimpik_text .first {
+    margin: 0;
+    padding: 5% 4%;
+    width: 50%;
+  }
+  .why-Olimpik_text .first + div {
+    margin: 0;
+    padding: 5% 4%;
+    width: 50%;
+  }
+  .why-Olimpik_text div img {
+    position: initial;
+    width: 75px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .why-Olimpik_text-top {
+    width: 100%;
+  }
+  .why-Olimpik_text-top div {
+    width: 100%;
+  }
+  .why-Olimpik_text-left {
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .why-Olimpik_text-right {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+  }
+  .why-Olimpik_text-bottom {
+    width: 100%;
+  }
+  /* why-Olimpik END */
+}
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 1200px) {
   .about_subtitle {
@@ -561,6 +598,20 @@ nav .nav_tel a {
   .products .row div span {
     font-weight: bold;
     font-size: 16px;
+  }
+  /* why-Olimpik START */
+  .why-Olimpik .title {
+    font-size: 35px;
+    line-height: 1.2;
+  }
+  .why-Olimpik_text .title, .why-Olimpik_text .subtitle {
+    font-size: 15px;
+  }
+  .why-Olimpik_text .first {
+    padding: 10% 5px;
+  }
+  .why-Olimpik_text .first + div {
+    padding: 10% 5px;
   }
 }
 
