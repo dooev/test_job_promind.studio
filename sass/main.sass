@@ -100,6 +100,7 @@ a:hover
 nav.navbar
   padding-top: 0px
   padding-bottom: 10px
+  cursor: pointer
     
 nav
   margin-bottom: 200px
@@ -185,8 +186,9 @@ nav
       transform: translate(-50%, -50%)
       font-size: 18px
       text-align: center
-      white-space: nowrap
-      line-height: 7
+      padding-left: 20px
+      padding-right: 20px
+      padding-top: 45px
       background: rgb(255,255,255)
       background: linear-gradient(0deg, rgba(255,255,255,0.9023984593837535) 0%, rgba(255,255,255,0.7875525210084033) 43%, rgba(255,255,255,0) 100%);
   .container
@@ -195,9 +197,10 @@ nav
 /* why-Olimpik START */
 .why-Olimpik
   margin-top: 200px
+  padding-top: 220px
+  padding-bottom: 200px
   background-image: url(/img/4-why_Olimpik/bg.jpg)
   .container
-    background-image: url(/img/4-why_Olimpik/plate.png)
     background-repeat: no-repeat
     background-position: center center
     .row
@@ -207,11 +210,92 @@ nav
       div
         display: flex
         flex-direction: column
-        max-width: 330px
+        span
+          display: inline-block
+          max-width: 290px
+          &+span
+            color: #6F6F6F
+  &_center
+    background-image: url(/img/4-why_Olimpik/plate.png)
+    background-repeat: no-repeat
+    background-size: cover
+    max-width: 680px
+    height: 680px
+    margin: 0 auto
+    text-align: center
+    padding-top: 280px
+    position: relative
+  &_text
+    display: flex
+    position: absolute
+    text-align: left
+    div img
+      position: absolute
+      width: 75px
+    &-top
+      top: -190px
+      width: 110%
+      div
+        width: 100%
+      .first
+        padding-right: 50px
+        & + div
+          padding-left: 50px
+        img
+          left: 175px
+      img
+        bottom: -150px
+
+    &-left
+      top: 85px
+      left: -300px
+      width: 260px
+      display: flex
+      flex-direction: column
+      .first
+        margin-bottom: 110px
+        img
+          right: -140px
+          top: 130px
+        & + div
+          img
+            right: -185px
+            bottom: 190px
+    &-right
+      right: -330px
+      top: 130px
+      width: 260px
+      display: flex
+      flex-direction: column
+      .first
+        margin-bottom: 60px
+        img
+          left: -180px
+          top: 85px
+        & + div
+          img
+            left: -195px
+            bottom: 130px
+    &-bottom
+      bottom: -200px
+      .first
+        margin-right: 100px
+        img
+          left: 175px
+      img
+        top: -150px
+        right: 180px
+
   .title
-    font-size: 24px
+    font-size: 20px
     font-family: "Merr-bold", sans-serif
-  
+    &_center
+      font-size: 50px
+  .subtitle
+    display: inline-block
+    margin-top: 20px
+    font-size: 20px 
+    color: #6f6f6f
 /* why-Olimpik END */
 
 
